@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additional Content</title>
+    <style>
+        /* CSS for content page layout */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+        h2 {
+            margin-top: 20px;
+            color: #444;
+        }
+        .image-container {
+            margin-bottom: 20px;
+        }
+        .image-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .image {
+            margin: 0 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+        p {
+            margin-bottom: 20px;
+            color: #666;
+            line-height: 1.6;
+        }
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+        }
+        /* CSS for quiz */
+        .quiz {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+        .question {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .options {
+            display: flex;
+            justify-content: center;
+        }
+        .option {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .option:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <a class="back-button" href="index.html"><button>Back to Home</button></a>
+    <div class="container">
+        <h2>Original Image</h2>
+        <p>Here is a picture of my dog named Tootsie! She is a black-mouth cur breed and she was a rescue dog from Georgia. She is about 8 years old now and we have had her since she was younger than 1!</p>
+        <div class="image-container">
+            <img src="originalImage.jpeg" alt="Original Image" style="max-width: 400px;">
+        </div>
+        <h2>AI Images</h2>
+        <p>Here are some AI generated images based off this image above. I wanted to create a cute cartoon like image of the dog above playing ball with other dogs.</p>
+        <div class="image-row">
+            <div class="image">
+                <img src="image1.jpg" alt="AI Image 1" style="max-width: 200px;">
+            </div>
+            <div class="image">
+                <img src="image2.jpg" alt="AI Image 2" style="max-width: 200px;">
+            </div>
+            <div class="image">
+                <img src="image3.jpg" alt="AI Image 3" style="max-width: 200px;">
+            </div>
+        </div>
+        <div class="quiz">
+            <h2>Test Your Dog Breed Knowledge</h2>
+            <div class="question">What is the most popular dog breed in the United States?</div>
+            <div class="options">
+                <button class="option" onclick="alert('Incorrect')">Labrador Retriever</button>
+                <button class="option" onclick="alert('Correct!')">Golden Retriever</button>
+                <button class="option" onclick="alert('Incorrect')">German Shepherd</button>
+                <button class="option" onclick="alert('Incorrect')">Beagle</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
